@@ -12,35 +12,41 @@
    
 </head>
 <body>
-    <nav class="nav-container">
-        <p class="luxterior">Luxterior</p>
-        <label for="opensidebarMenu" class="sidebariconToggle"><i class="fa fa-light fa-bars-staggered"></i></label>
-        <input type="checkbox" id="opensidebarMenu">
-        <div class="nav-links">
-            <ul class="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">Contacts</a></li>
-            </ul>
-        </div>
-        <div class="navbar-icons">
-            <i id="search-icon" class="fa fa-light fa-search"></i>
-            <i id="bar-icon" class="fa fa-light fa-bars-staggered"></i>
-        </div>
-    </nav>
+    <header>
+        <nav class="nav-container">
+            <p class="luxterior">Luxterior</p>
+            <label for="opensidebarMenu" class="sidebariconToggle"><i class="fa fa-light fa-bars-staggered"></i></label>
+            <input type="checkbox" id="opensidebarMenu">
+            <div class="nav-links">
+                <ul class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="navbar-icons">
+                <i id="search-icon" class="fa fa-light fa-search"></i>
+                <i id="bar-icon" class="fa fa-light fa-bars-staggered"></i>
+            </div>
+        </nav>
+    </header>
     
-    <header class="container">
+    <section class="banner container">
         <div class="intro-text-box">
-            <p class="intro-text1">We help you <br>make modern <br>interior</p>
+            <p class="intro-text1">We help you make modern interior</p>
             <p class="intro-text2">We will help you to make an elegant and luxurious interior designed by professional interior designers</p>
         </div>
-        <img id="square-icon" src="Images/square.png" alt="error">
+        
         <div class="intro-image">
-            <img class="image1" src="Images/image1.jpg" alt="error">
+            <div class="square-box"></div>
+            <img class="image1" src="Images/image1.jpg" alt="Living-room">
+       
+            <div class="download-box">
+                <img id="download-icon" src="Images/down-arrow.png" alt="download-icon">
+            </div>
         </div>
-        <img id="download-icon" src="Images/down-arrow.png" alt="error">
-    </header>
+    </section>
     <section class=" container features">
         <div class="features-title">
             <img class="horizontal-straight-line" src="Images/minus-horizontal-straight-line.png" alt="error">
@@ -48,28 +54,28 @@
         </div>
         <div class="features-desc">
             <div class="features-items">
-                <div>
+                <div class="feature-icons">
                     <img id="quality-icon" src="Images/crown.png" alt="error">
                 </div>
-                <div id="BQ">
+                <div class="feature-briefs">
                     <p class="feature-subheading">Best Quality</p>
                     <p class="feature-brief">All of our furniture uses the best materials and choices for our customers.</p>
                 </div>
             </div>
             <div class="features-items">
-                <div>
+                <div class="feature-icons">
                     <img id="truck-icon" src="Images/delivery-truck.png" alt="error">
                 </div>
-                <div id="FS">
+                <div class="feature-briefs">
                     <p class="feature-subheading">Free Shipping</p>
                     <p class="feature-brief">Free shipping everytime you buy furniture from us without exception.</p>
                 </div>
             </div>
             <div class="features-items">
-                <div>
+                <div class="feature-icons">
                     <img id="badge-icon" src="Images/badge.png" alt="error">
                 </div>
-                <div id="WY">
+                <div class="feature-briefs">
                     <p class="feature-subheading">Warranty</p>
                     <p class="feature-brief">Everytime you buy our furniture products, you will get warranty without exception.</p>
                 </div>
@@ -95,8 +101,10 @@
                 <p class="awards">Award <br>gained</p>
                 <p class="total-sold">Furniture <br>sold</p>
             </div>
-            <button id="LM-btn">Learn more</button>
-            <span class="lm-right-arrow">&#8594;</span>
+            <div class="learn-more">
+                <button id="LM-btn">Learn more</button>
+                <span class="lm-right-arrow">&#8594;</span>
+            </div>
         </div>
     </section>
     <section class="container process">
