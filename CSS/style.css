@@ -12,8 +12,6 @@ nav{
     max-width: 1350px;
     margin: auto;
     display: flex;
-    /* padding: 2% 4%; */
-    /* justify-content: space-between; */
     align-items: center;
 }
 .nav-links{
@@ -39,15 +37,11 @@ nav{
     font-size: 17px;
     font-weight: 500;
 }
-#search-icon{
-    font-size: 26px;
-    color: #0d182b;
-    margin-right: 60px;
-}
-#bar-icon{
+.navbar-icons{
+    display: flex;
+    gap: 28px;
     font-size: 28px;
     color: #0d182b;
-    margin-right: 115px;
 }
 .luxterior{
     font-size: 28px;
@@ -61,7 +55,6 @@ nav{
 .intro-text-box{
     left: 0;
     width: 500px;
-    /* height: 340px; */
     z-index: 1;
     position: absolute;
     margin-top: 12%;
@@ -78,7 +71,6 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 500px;*/
     width: 90%;
 }
   
@@ -216,12 +208,6 @@ nav{
     font-weight: 500;
     color: #384349;
 }
-/* .lm-right-arrow{
-    font-size: 45px;
-    position: absolute;
-    right: 71%;
-    align-self: center;
-} */
 #LM-btn::after {
     content: '⟶';
     color: #384349;
@@ -308,22 +294,20 @@ nav{
 .fb-heading-arrow{
     display: flex;
 }
+.fb-heading{
+    flex: 1;
+}
 .fb{
     font-size: 40px;
     font-weight: 700;
     width: 400px;
     margin-top: 50px;
 }
-.l-r-arrow{
-    width: fit-content;
-    margin-left: 40%;
-}
 .arrow-l-r{
     width: 30px;
     height: 35px;
     margin-top: 100px;
     text-align: right;
-    
 }
 .feedback-grid{
     display: grid;
@@ -347,7 +331,6 @@ nav{
     border-radius: 50%;
     margin-left: 38px;
     margin-top: 20px;
-
 }
 .cust-name-field{
     flex: 1;
@@ -386,8 +369,11 @@ nav{
     font-size: 16px;
 }
 .subscribe{
-    /* height: 235px; */
     text-align: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
 }
 .subscribe-heading{
     font-size: 40px;
@@ -402,9 +388,9 @@ nav{
     height: 48px;
     background-color: white;
     display: flex;
-    /* padding: 5px 10px 5px 0; */
-    margin: -25px 23%;
+    /* margin: -25px 23%; */
     z-index: 2;
+    bottom: -9%;
     justify-content: space-between;
     position: absolute;
     align-items: center;
@@ -436,7 +422,6 @@ nav{
 footer{
     display: flex;
     height: 400px;
-    /* z-index: -1; */
     justify-content: center;
     background-color: rgb(82, 103, 116);
     color: #fff;
@@ -482,9 +467,6 @@ footer ul li a{
     .nav-container{
         max-width: 950px;
     }
-    .nav-links{
-        padding-left: 40px;
-    }
     .nav-links ul li{
         padding-left: 15px;
     }
@@ -495,18 +477,10 @@ footer ul li a{
         font-size: 26px;
         margin-left: 55px;
     }
-    #search-icon{
-        margin-right: 45px;
-    }
-    #bar-icon{
-        margin-right: 20px;
-    }
     .container-contents{
         margin-left: 20px;
     }
     .image1{
-        /* width: 700px;
-        height: 480px; */
         margin-left: 240px;
     }
     .download-box{
@@ -523,10 +497,8 @@ footer ul li a{
         height: 80px;
     }
     .intro-text-box{
-        /* left: -56%; */
         margin-top: 150px;
         width: 45%;
-        /* height: 250px; */
     }
     .intro-text-box h1{
         font-size: 30px;
@@ -550,7 +522,6 @@ footer ul li a{
         height: 100%;
     }
     .experience{
-        /* padding-top: 140px; */
         gap: 20px;
     }
     #exp-heading{
@@ -607,13 +578,6 @@ footer ul li a{
         width: 350px;
 
     }
-    /* .fb-heading-arrow{
-        width: 710px;
-    } */
-    .l-r-arrow{
-        margin-left: 35%;
-        display: flex;
-    }
     .double-quotes{
         margin-top: 20px;
         width: 94px;
@@ -623,9 +587,6 @@ footer ul li a{
         font-size: 26px;
         margin-right: 20px;
     }
-    /* .subscribe{
-        height: 215px;
-    } */
     .subscribe-heading{
         font-size: 37px;
         font-weight: 650;
@@ -637,7 +598,6 @@ footer ul li a{
     .subscriber-box{
         width: 500px;
         height: 40px;
-        margin: -21px 18%;
     }
     .subscriber-box input[type="text"]{
         font-size: 14px;
@@ -668,7 +628,6 @@ footer ul li a{
     .social{
         padding-left: 17px;
     }
-
 }
 
   @media (max-width: 900px){
@@ -676,39 +635,30 @@ footer ul li a{
         max-width: 800px;
         margin: 5% 5% 0 5% ;
     }
+    .luxterior{
+        font-size: 24px;
+        margin-left: 25px;
+    }
     .nav-container{
         max-width: 700px;
     }
-    .nav-links{
-        padding-left: 20px;
-    }
     .nav-links ul{
         display: flex;
-        padding-left: 20px;
+        padding-left: 0px;
     }
     .nav-links ul li{
         padding-left: 12px;
     }
     .nav-links ul li a{
-        font-size: 15px;
+        font-size: 14px;
     }
-    .luxterior{
-        font-size: 24px;
-        margin-left: 25px;
-    }
-    #search-icon{
-        margin-right: 25px;
-    }
-    #bar-icon{
-        margin-right: 0;
+    .navbar-icons{
+        font-size: 20px;
     }
     .image1{
-        /* width: 500px;
-        height: 320px; */
         margin-left: 90px;
     }
     .intro-text-box{
-        /* height: 250px; */
         width: 36%;
         margin-top: 14%;
     }
@@ -828,14 +778,6 @@ footer ul li a{
         width: 300px;
 
     }
-    /* .fb-heading-arrow{
-        max-width: 700px;
-    } */
-    .l-r-arrow{
-        margin-left: 30%;
-        display: flex;
-        float: right;
-    }
     .double-quotes{
         margin-top: 20px;
         width: 80px;
@@ -863,8 +805,8 @@ footer ul li a{
         margin: 0 20%;
     }
     .subscriber-box{
-        margin: -20px 18%;
         padding: 0;
+        bottom: -8%;
         width: 410px;
         height: 35px;
     }
@@ -889,17 +831,20 @@ footer ul li a{
         padding-left: 0px;
     }
     footer h3{
-        padding-left: 20px;
+        padding-left: 18px;
+        font-size: 16px;
         margin-bottom: 0;
     }
     footer ul{
-        padding-left: 15px;
+        padding-left: 13px;
     }
     footer ul li a{
         padding-left: 5px;
-        font-size: 13px;
+        font-size: 11px;
     }
     .social{
+        width: 24px;
+        height: 24px;
         padding-left: 9px;
     }
 }
@@ -933,7 +878,6 @@ footer ul li a{
         border-bottom: 1px solid rgba(255, 255, 255, 0.19);
     }
     .menu li a{
-        /* display: block; */
         color: #fff;
         text-decoration: none;
     }
@@ -946,14 +890,13 @@ footer ul li a{
         display: block;
         position: absolute;
         top: 40px;
-        left: 95%;
+        left: 93%;
         cursor: pointer;
     }
     .navbar-icons{
         display: none;
     }
     .banner-container{
-        /* display: flex; */
         flex-direction: column;
         gap: 20px;
     }
@@ -967,12 +910,13 @@ footer ul li a{
     }
     .intro-text-box h1{
         font-size: 20px;
-        padding: 0 6% 0 10%;
+        line-height: 25px;
+        padding: 2% 6% 1% 10%;
         font-weight: 600;
     }
     .intro-text2{
         font-size: 10px;
-        padding: 0 14% 0 10%;
+        padding: 0 14% 4% 10%;
         margin: 0;
         text-align: justify;
     }
@@ -982,13 +926,11 @@ footer ul li a{
         display: flex;
         align-items: center;
         justify-content: center;
-        
     }
     .image1{
         width: 85%;
         height: 100%;
         margin: auto;
-        
     }
     .download-box{
         margin: 45% 0 0 65%;
@@ -1093,7 +1035,7 @@ footer ul li a{
         left: 80px;
         font-size: 25px;
         bottom: -3px;
-        }
+    }
     .process{
         flex-direction: column;
     }
@@ -1125,7 +1067,6 @@ footer ul li a{
     .fb{
         font-size: 20px;
         width: 200px;
-
     }
     .feedback-heading{
         font-size: 16px;
@@ -1156,9 +1097,6 @@ footer ul li a{
     .customer-field{
         font-size: 10px;
     }
-    /* .subscribe{
-        height: 143px;
-    } */
     .subscribe-heading{
         margin: 20px 10px 10px 10px;
         font-size: 20px;
@@ -1183,9 +1121,9 @@ footer ul li a{
         font-size: 13px;
     }
     .subscriber-box{
-        margin: -15px 10%;
         width: 250px;
         height: 30px;
+        bottom: -10%;
     }
     footer{
         flex-direction: column;
@@ -1221,9 +1159,6 @@ footer ul li a{
     .container{
         margin: 0 auto;
     }
-    .lm-right-arrow{
-        right: 75%;
-    }
     .intro-text-box{
         left: -56%;
         width: 100%;
@@ -1240,7 +1175,6 @@ footer ul li a{
     }
     .square-box{
         margin: 26% 0 0 -30%;
-
     }
     .download-box{
         margin: 26% 0 0 48%;
