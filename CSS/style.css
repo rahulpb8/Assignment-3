@@ -18,7 +18,8 @@ nav{
 }
 .nav-links{
     flex: 1;
-    padding-left: 60px;
+    display: flex;
+    justify-content: center;
 }
 .sidebariconToggle{
     display: none;
@@ -60,7 +61,7 @@ nav{
 .intro-text-box{
     left: 0;
     width: 500px;
-    height: 340px;
+    /* height: 340px; */
     z-index: 1;
     position: absolute;
     margin-top: 12%;
@@ -77,9 +78,10 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 500px; */
+    /* height: 500px;*/
     width: 90%;
 }
+  
 .download-box{
     z-index: 1;
     position: absolute;
@@ -109,7 +111,7 @@ nav{
 .intro-text2{
     color: #fff;
     font-size: 18px;
-    padding: 0 15% 0 23%
+    padding: 0 12% 0 23%
 }
 .features-heading{
     font-size: 40px;
@@ -132,6 +134,7 @@ nav{
 }
 .features-items{
     display: flex;
+    gap: 10px;
 }
 .feature-subheading{
     font-size: 30px;
@@ -204,16 +207,29 @@ nav{
     position: relative;
 }
 #LM-btn{
-    padding: 16px 32px;
-    color: black;
-    border: 2px solid #030303;
+    background-color: white;
+    position: relative;
+    border-width: 2px;
+    border-style: solid;
+    text-decoration: none;
+    padding: 14px 32px;
+    font-weight: 500;
+    color: #384349;
 }
-.lm-right-arrow{
+/* .lm-right-arrow{
     font-size: 45px;
     position: absolute;
     right: 71%;
     align-self: center;
-}
+} */
+#LM-btn::after {
+    content: '⟶';
+    color: #384349;
+    position: absolute;
+    font-size: 40px;
+    left: 147px;
+    bottom: -1px;
+  }
 .process{
     display: flex;
     margin-top: 100px;
@@ -420,7 +436,8 @@ nav{
 footer{
     display: flex;
     height: 400px;
-    z-index: -1;
+    /* z-index: -1; */
+    justify-content: center;
     background-color: rgb(82, 103, 116);
     color: #fff;
 }
@@ -507,19 +524,19 @@ footer ul li a{
     }
     .intro-text-box{
         /* left: -56%; */
-        margin-top: 80px;
+        margin-top: 150px;
         width: 45%;
-        height: 250px;
+        /* height: 250px; */
     }
     .intro-text-box h1{
         font-size: 30px;
         margin-top: 0;
-        padding: 2% 7% 0 31%;
+        padding: 2% 4% 0 31%;
         font-weight: 750;
     }
     .intro-text2{
         font-size: 15px;
-        padding: 0 7% 0 31%
+        padding: 0 4% 0 31%
     }
     .features-heading{
         font-size: 37px;
@@ -550,9 +567,12 @@ footer ul li a{
     .exp-number p{
         font-size: 14px;
     }
-    .lm-right-arrow{
-        font-size: 50px;
-        right: 57%;
+    #LM-btn{
+        padding: 12px 26px;
+    }
+    #LM-btn::after{
+    left: 135px;
+    bottom: -2px;
     }
     .process{
         gap: 30px;
@@ -587,9 +607,9 @@ footer ul li a{
         width: 350px;
 
     }
-    .fb-heading-arrow{
+    /* .fb-heading-arrow{
         width: 710px;
-    }
+    } */
     .l-r-arrow{
         margin-left: 35%;
         display: flex;
@@ -688,18 +708,19 @@ footer ul li a{
         margin-left: 90px;
     }
     .intro-text-box{
-        height: 250px;
+        /* height: 250px; */
         width: 36%;
-        margin-top: 10%;
+        margin-top: 14%;
     }
     .intro-text-box h1{
-        font-size: 28px;
-        padding-left: 18%;
+        font-size: 27px;
+        line-height: 35px;
+        padding-left: 16%;
         font-weight: 700;
     }
     .intro-text2{
         font-size: 12px;
-        padding-left: 18%;
+        padding-left: 16%;
         margin: 0;
     }
     #download-icon{
@@ -717,14 +738,15 @@ footer ul li a{
     .features-heading{
         font-size: 32px;
         padding-left: 120px;
-        margin-right: 209px;
+        margin-right: 10%;
     }
     .horizontal-straight-line{
         height: 25px;
         width: 90px;
     }
-    .features{
-        width: 700px;
+    .features-desc{
+        grid-template-columns: 350px;
+        justify-content: center;
     }
     #quality-icon{
         width: 45px;
@@ -734,10 +756,10 @@ footer ul li a{
     #truck-icon{
         width: 50px;
         height: 50px;
-        padding: 25px 15px 0px 15px;
+        padding: 25px 15px 0px 0px;
     }
     #badge-icon{
-        padding: 25px 15px 0px 15px;
+        padding: 25px 15px 0px 10px;
     }
     .feature-subheading{
         font-size: 22px;
@@ -767,15 +789,16 @@ footer ul li a{
         margin: 10px 0 20px 0;
     }
     #LM-btn{
-        padding: 12px 25px;
+        padding: 8px 17px;
     }
-    .lm-right-arrow {
-        font-size: 48px;
-        right: 52%;
-    }
+    #LM-btn::after{
+        left: 118px;
+        font-size: 35px;
+        bottom: -3px;
+        }
     #image3{
         width: 100%;
-        border-radius: 8px;
+        border-radius: 4px;
     }
     .process-brief h2{
         font-size: 32px;
@@ -805,12 +828,13 @@ footer ul li a{
         width: 300px;
 
     }
-    .fb-heading-arrow{
+    /* .fb-heading-arrow{
         max-width: 700px;
-    }
+    } */
     .l-r-arrow{
         margin-left: 30%;
         display: flex;
+        float: right;
     }
     .double-quotes{
         margin-top: 20px;
@@ -901,13 +925,20 @@ footer ul li a{
         padding: 0;
         margin: 0;
     }
+    .nav-links ul{
+        display: block;
+    }
     .menu li{
         color: #fff;
         border-bottom: 1px solid rgba(255, 255, 255, 0.19);
     }
     .menu li a{
+        /* display: block; */
         color: #fff;
         text-decoration: none;
+    }
+    #opensidebarMenu{
+        display: none;
     }
     .sidebariconToggle{
         width: 22px;
@@ -921,7 +952,7 @@ footer ul li a{
     .navbar-icons{
         display: none;
     }
-    .banner{
+    .banner-container{
         /* display: flex; */
         flex-direction: column;
         gap: 20px;
@@ -1048,17 +1079,21 @@ footer ul li a{
     .exp-number-text .total-sold{
         padding-top: 10px;
     }
+    .learn-more{
+        justify-content: center;
+        align-items: center;
+    }
     #LM-btn{
-        width: 140px;
+        padding: 7px 15px;
+    }
+    .learn-more a{
         font-size: 10px;
-        padding: 10px 0px;
-        margin:0 100px;
     }
-    .lm-right-arrow
-    {
-        font-size: 45px;
-        right: 23%;
-    }
+    #LM-btn::after{
+        left: 80px;
+        font-size: 25px;
+        bottom: -3px;
+        }
     .process{
         flex-direction: column;
     }
