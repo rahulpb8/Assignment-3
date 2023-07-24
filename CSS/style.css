@@ -53,21 +53,15 @@ nav{
     position: relative;
 }
 .image1{
-    /* width: 100%;
-    height: 90%;
-    margin-left: 245px; */
     max-width: 100%;
     max-height: 100%;
     border-radius: 4px;
 }
 .banner-image{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 80%;
+    max-width: 82%;
     margin-left: auto;
 }
-  
 .download-box{
     z-index: 1;
     position: absolute;
@@ -82,22 +76,22 @@ nav{
 }
 .square-box{
     width: 100px;
-    height: 95px;
-    border: 2px solid rgb(47, 46, 46);
-    left: 18%;
-    bottom: -3%;
-    border-radius: 2px;
+    height: 100px;
     z-index: -1;
     position: absolute;
+    left: 16%;
+    bottom: -3%;
+    border-radius: 2px;
+    border: 2px solid rgb(47, 46, 46);
 }
 .banner-text{
     display: flex;
-    left: -46%;
     max-width: 100%;
     z-index: 1;
     position: absolute;
-    padding: 0 6% 2% 58%;
-    margin-top: 10%;
+    padding: 0 6% 2% 48%;
+    margin-top: 13%;
+    left: -46%;
     border-radius: 4px;
     background-color: rgb(82, 103, 116);
 }
@@ -108,6 +102,7 @@ nav{
 .intro-text-box h1{
     font-size: 40px;
     font-weight: 800; 
+    line-height: 50px;
     margin-bottom: 0px; 
 }
 .intro-text2{
@@ -124,9 +119,7 @@ nav{
     width: 110px;
     height: 40px;
     position: absolute;
-    padding-top: 45px;
-    padding-left: 0px;
-    font-weight: bolder;
+    padding-top: 30px;
 }
 .features-desc{
     display: grid;
@@ -393,13 +386,12 @@ nav{
     height: 48px;
     background-color: white;
     display: flex;
-    /* margin: -25px 23%; */
     z-index: 2;
     bottom: -9%;
     justify-content: space-between;
     position: absolute;
     align-items: center;
-    box-shadow:0px 0px 15px rgb(63, 63, 63);
+    box-shadow:0 0 6px rgb(63, 63, 63);
 }
 .subscriber-box input{
     margin-left: 20px;
@@ -498,10 +490,11 @@ footer ul li a{
     }
     .intro-text-box h1{
         font-size: 30px;
+        line-height: normal;
         font-weight: 750;
     }
     .intro-text2{
-        font-size: 15px;
+        font-size: 14px;
     }
     .features-heading{
         font-size: 37px;
@@ -654,6 +647,7 @@ footer ul li a{
     .intro-text-box h1{
         font-size: 27px;
         line-height: 35px;
+        margin-top: 15px;
         font-weight: 700;
     }
     .intro-text2{
@@ -689,11 +683,9 @@ footer ul li a{
     #truck-icon{
         width: 50px;
         height: 50px;
-        /* margin: 16px 0 0 0; */
         padding: 25px 15px 0px 0px;
     }
     #badge-icon{
-        /* margin: 16px 0 0 0; */
         padding: 25px 15px 0px 10px;
     }
     .feature-subheading{
@@ -704,7 +696,7 @@ footer ul li a{
     }
     #image2{
         width: 100%;
-        height: 98%;
+        /* height: 98%; */
     }
     #exp-heading{
         font-size: 32px;
@@ -778,6 +770,11 @@ footer ul li a{
     .customer-name{
         font-size: 17px;
     }
+    .customer-img{
+        height: 40px;
+        width: 40px;
+        margin-top: 15px;
+    }
     .customer-field{
         font-size: 14px;
     }
@@ -836,7 +833,7 @@ footer ul li a{
 
 @media (max-width: 500px) {
     .nav-links{
-        height: 40%;
+        height: 24%;
         position: absolute;
         z-index: 10;
         right: 0;
@@ -845,7 +842,7 @@ footer ul li a{
         border-radius: 2px;
         width: 120px;
         margin-top: 60px;
-        background-color: #e2dddd;
+        background-color: #008ba3;
     }
     #opensidebarMenu:checked ~ .nav-links{
         display: block;
@@ -859,11 +856,9 @@ footer ul li a{
         display: block;
     }
     .menu li{
-        color: #fff;
         border-bottom: 1px solid rgba(255, 255, 255, 0.19);
     }
     .menu li a{
-        color: #fff;
         text-decoration: none;
     }
     #opensidebarMenu{
@@ -909,8 +904,6 @@ footer ul li a{
     .banner-image{
         max-width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
     }
     .image1{
         width: 85%;
@@ -952,7 +945,6 @@ footer ul li a{
     }
     .features{
         flex-direction: column;
-        /* width: 300px; */
     }
     #quality-icon{
         position: absolute;
@@ -1147,7 +1139,7 @@ footer ul li a{
         padding-top: 0px;
     }
 }
-@media (min-width: 2560px) {
+@media (min-width: 1700px) {
     .container{
         margin: 0 auto;
     }
