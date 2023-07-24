@@ -91,7 +91,7 @@ nav{
     max-width: 100%;
     z-index: 1;
     position: absolute;
-    padding: 0 6% 2% 48%;
+    padding: 0 5% 2% 47%;
     margin-top: 13%;
     left: -46%;
     border-radius: 4px;
@@ -109,6 +109,24 @@ nav{
 }
 .intro-text2{
     font-size: 18px;
+}
+.up-down{
+    width: 40px;
+    position: relative;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-banner{
+    width: 15px;
+    height: 15px;
+}
+.vertical-line{
+    width: 1px;
+    height: 40px;
+    background-color: #7a7d81;
 }
 .features-heading{
     font-size: 40px;
@@ -498,6 +516,9 @@ footer ul li a{
     .intro-text2{
         font-size: 14px;
     }
+    .up-down{
+        font-size: 11px;
+    }
     .features-heading{
         font-size: 37px;
         margin-right: 250px;
@@ -660,6 +681,10 @@ footer ul li a{
     .square-box{
         width: 60px;
         height: 60px; 
+    }
+    .up-down{
+        left: 1%;
+        font-size: 12px;
     }
     .features-heading{
         font-size: 32px;
@@ -921,6 +946,20 @@ footer ul li a{
     #download-icon{
         width: 48px;
         height: 40px;
+    }
+    .up-down{
+        position: absolute;
+        left: 91%;
+        top: 57%;
+        display: flex;
+        font-size: 10px;
+    }
+    .vertical-line{
+        height: 28px;
+    }
+    .arrow-banner{
+        width: 10px;
+        height: 10px;
     }
     .features-heading{
         width: 82%;
