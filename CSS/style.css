@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0 auto;  
     font-family: 'Poppins', sans-serif;
@@ -67,7 +70,6 @@ nav{
     position: absolute;
     right: -1%;
     bottom: -3%;
-    margin: 40% 0 0 60%;
 }
 #download-icon{
     width: 110px;
@@ -93,7 +95,7 @@ nav{
     margin-top: 13%;
     left: -46%;
     border-radius: 4px;
-    background-color: rgb(82, 103, 116);
+    background-color: #526774;
 }
 .intro-text-box{
     max-width: 330px;
@@ -119,7 +121,7 @@ nav{
     width: 110px;
     height: 40px;
     position: absolute;
-    padding-top: 30px;
+    margin-top: 40px;
 }
 .features-desc{
     display: grid;
@@ -134,17 +136,17 @@ nav{
     font-weight: 550;
 }
 #truck-icon{
-    padding: 35px 28px 0px 30px;
+    margin: 35px 28px 0px 30px;
     width: 60px;
     height: 60px;
 }
 #quality-icon{
-    padding: 40px 28px 0 0;
+    margin: 40px 28px 0 0;
     width: 50px;
     height: 50px;
 }
 #badge-icon{
-    padding: 40px 28px 0 30px;
+    margin: 40px 28px 0 30px;
     width: 40px;
     height: 40px;
 }
@@ -208,11 +210,11 @@ nav{
 }
 #LM-btn::after {
     content: '⟶';
-    color: #384349;
     position: absolute;
     font-size: 40px;
     left: 147px;
     bottom: -1px;
+    color: #364248;
   }
 .process{
     display: flex;
@@ -409,7 +411,7 @@ nav{
     height: 69%;
     width: 20%;
     position: absolute;
-    background-color: rgb(82, 103, 116);;
+    background-color: #526774;;
     margin-left: 440px;
     font-size: x-small;
     display: flex;
@@ -424,8 +426,8 @@ footer{
     color: #fff;
 }
 .company{
- width: 25%;
- margin: 100px 0 0 90px;
+    width: 25%;
+    margin: 100px 0 0 90px;
 }
 .footer-contents{
     padding-left: 70px;
@@ -453,8 +455,8 @@ footer ul li a{
 .social{
     width: 30px;
     height: 30px;
-    padding-left: 40px;
-    padding-top: 15px;
+    margin-left: 18px;
+    margin-top: 15px;
 }
 
 @media (max-width: 1100px) {
@@ -528,8 +530,8 @@ footer ul li a{
         padding: 12px 26px;
     }
     #LM-btn::after{
-    left: 135px;
-    bottom: -2px;
+        left: 135px;
+        bottom: -2px;
     }
     .process{
         gap: 30px;
@@ -611,9 +613,6 @@ footer ul li a{
         padding-left: 15px;
         font-size: 15px;
     }
-    .social{
-        padding-left: 17px;
-    }
 }
 
   @media (max-width: 900px){
@@ -678,15 +677,15 @@ footer ul li a{
     #quality-icon{
         width: 45px;
         height: 45px;
-        padding: 25px 17px 0px 0px;
+        margin: 25px 17px 0px 0px;
     }
     #truck-icon{
         width: 50px;
         height: 50px;
-        padding: 25px 15px 0px 0px;
+        margin: 25px 15px 0px 0px;
     }
     #badge-icon{
-        padding: 25px 15px 0px 10px;
+        margin: 25px 15px 0px 10px;
     }
     .feature-subheading{
         font-size: 22px;
@@ -696,7 +695,6 @@ footer ul li a{
     }
     #image2{
         width: 100%;
-        /* height: 98%; */
     }
     #exp-heading{
         font-size: 32px;
@@ -827,7 +825,6 @@ footer ul li a{
     .social{
         width: 24px;
         height: 24px;
-        padding-left: 9px;
     }
 }
 
@@ -877,7 +874,7 @@ footer ul li a{
         display: none;
     }
     .banner-container{
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 20px;
     }
     .banner-text{
@@ -930,6 +927,11 @@ footer ul li a{
         font-size: 20px;
         padding-left: 50px;
     }
+    .horizontal-straight-line{
+        height: 10px;
+        width: 40px;
+        margin-top: 27px;
+    }
     .feature-description-container{
         display: flex;
         justify-content: center;
@@ -938,11 +940,6 @@ footer ul li a{
         grid-template-columns: auto;
         width: 300px;
     }
-    .horizontal-straight-line{
-        height: 10px;
-        width: 40px;
-        padding-top: 27px;
-    }
     .features{
         flex-direction: column;
     }
@@ -950,17 +947,17 @@ footer ul li a{
         position: absolute;
         width: 40px;
         height: 40px;
-        padding: 15px 17px 0px 0px;
+        margin: 15px 17px 0px 0px;
     }
     #truck-icon{
         position: absolute;
         width: 45px;
         height: 45px;
-        padding: 10px 5px 0 0;
+        margin: 10px 5px 0 0;
     }
     #badge-icon{
         position: absolute;
-        padding: 10px 5px 0 0;
+        margin: 10px 5px 0 0;
     }
     .feature-subheading{
         margin:15px 0 0 57px;
@@ -1100,9 +1097,9 @@ footer ul li a{
         font-size: 12px;
     }
     .subscriber-box a{
-        margin-left: 158px;
-        padding: 2px 20px;
-        font-size: 13px;
+        margin: 2px 20px 2px 174px;
+        font-size: 10px;
+        width: 29%;
     }
     .subscriber-box{
         width: 250px;
