@@ -184,7 +184,8 @@ nav{
     flex: 1;
 }
 #image2{
-    width: 85%;
+    width: 100%;
+    height: 100%;
     border-radius: 4px;
 }
 #exp-heading{
@@ -246,8 +247,8 @@ nav{
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    column-gap: 30px;
-    row-gap: 20px;
+    column-gap: 20px;
+    row-gap: 5px;
 }
 .process-image{
     flex: 1;
@@ -687,12 +688,12 @@ footer ul li a{
         font-size: 12px;
     }
     .features-heading{
-        font-size: 32px;
+        font-size: 28px;
         padding-left: 120px;
-        margin-right: 10%;
+        margin-right: 16%;
     }
     .horizontal-straight-line{
-        height: 25px;
+        height: 10px;
         width: 90px;
     }
     .features-desc{
@@ -722,8 +723,8 @@ footer ul li a{
         width: 100%;
     }
     #exp-heading{
-        font-size: 32px;
-        margin: 2px 0 5px 0;
+        font-size: 28px;
+        margin: 0 0 5px 0;
     }
     #exp-brief{
         font-size: 13px;
@@ -751,7 +752,7 @@ footer ul li a{
         border-radius: 4px;
     }
     .process-brief h2{
-        font-size: 32px;
+        font-size: 28px;
     }
     .process-heading h3{
         margin: 5px 0 0 0;
@@ -774,7 +775,7 @@ footer ul li a{
         margin-left: 50px;
     }
     .fb{
-        font-size: 32px;
+        font-size: 28px;
         width: 300px;
 
     }
@@ -802,11 +803,12 @@ footer ul li a{
         font-size: 14px;
     }
     .subscribe-heading{
-        font-size: 32px;
+        font-size: 28px;
         margin: 16px 20%;
         font-weight: 650;
     }
     .subscribe-brief{
+        font-size: 14px;
         margin: 0 20%;
     }
     .subscriber-box{
