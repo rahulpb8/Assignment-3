@@ -668,7 +668,7 @@ footer ul li a{
     .intro-text-box h1{
         font-size: 27px;
         line-height: 35px;
-        margin-top: 15px;
+        margin: 15px 0;
         font-weight: 700;
     }
     .intro-text2{
@@ -901,14 +901,14 @@ footer ul li a{
         display: none;
     }
     .banner-container{
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 20px;
     }
     .banner-text{
         padding: 0;
         position: relative;
         align-self: center;
-        width: 85%;
+        /* width: 85%; */
         margin-top: 0;
         left: auto;
         justify-content: center;
@@ -917,6 +917,7 @@ footer ul li a{
         font-size: 20px;
         line-height: 25px;
         padding: 2% 6% 1% 10%;
+        margin: 5px 0;
         font-weight: 600;
     }
     .intro-text2{
@@ -928,6 +929,7 @@ footer ul li a{
     .banner-image{
         max-width: 100%;
         display: flex;
+        position: relative;
     }
     .image1{
         width: 85%;
@@ -936,12 +938,12 @@ footer ul li a{
     }
     .download-box{
         z-index: 2;
-        right: 5%;
-        bottom: -3%;
+        right: 6%;
+        bottom: -5%;
     }
     .square-box{
         left: 5%;
-        bottom: -2%;
+        bottom: -3%;
         width: 35px;
         height: 35px; 
     }
@@ -951,8 +953,8 @@ footer ul li a{
     }
     .up-down{
         position: absolute;
-        left: 91%;
-        top: 57%;
+        left: 92%;
+        top: 27%;
         display: flex;
         font-size: 10px;
     }
