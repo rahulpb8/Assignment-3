@@ -8,11 +8,11 @@ body{
 .container{
     max-width: 1350px;
     height: 100%;
-    margin: 6% 8% 0 8% ;
+    margin: 5%;
 }
-nav{
+.nav-container{
     max-width: 1350px;
-    margin: auto;
+    margin: 2% 5%;
     display: flex;
     align-items: center;
 }
@@ -48,16 +48,15 @@ nav{
 .luxterior{
     font-size: 28px;
     font-weight: 700;
-    margin-left: 100px;
 }
 .banner-container{
-    margin-top: 0 ;
     display: flex;
     position: relative;
+    align-items: center;
 }
 .image1{
     max-width: 100%;
-    max-height: 100%;
+    /* max-height: 100%; */
     border-radius: 4px;
 }
 .banner-image{
@@ -91,9 +90,8 @@ nav{
     max-width: 100%;
     z-index: 1;
     position: absolute;
-    padding: 0 5% 2% 47%;
-    margin-top: 13%;
-    left: -46%;
+    padding: 0 5% 2% 52%;
+    left: -53%;
     border-radius: 4px;
     background-color: #526774;
 }
@@ -144,29 +142,34 @@ nav{
 .features-desc{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 .features-items{
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
 }
 .feature-subheading{
     font-size: 30px;
     font-weight: 550;
 }
 #truck-icon{
-    margin: 35px 28px 0px 30px;
-    width: 60px;
-    height: 60px;
-}
-#quality-icon{
-    margin: 40px 28px 0 0;
+    /* margin: 35px 28px 0px 30px; */
     width: 50px;
     height: 50px;
+    margin-top: 28px;
+}
+#quality-icon{
+    /* margin: 40px 28px 0 0; */
+    width: 45px;
+    height: 45px;
+    margin-top: 35px;
 }
 #badge-icon{
-    margin: 40px 28px 0 30px;
-    width: 40px;
-    height: 40px;
+    /* margin: 40px 28px 0 30px; */
+    width: 37px;
+    height: 37px;
+    margin-top: 35px;
 }
 .experience{
     display: flex;
@@ -293,17 +296,9 @@ nav{
     visibility: hidden;
 }
 .brief{
-    line-height: 25px;
-    letter-spacing: 1px;
+    /* line-height: 25px; */
     margin: 0;
-    font-size: 15px;
-}
-.brief-last{
-    margin-left: 135px;
-    margin-right: 70px;
-    line-height: 25px;
-    letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 17px;
 }
 .process-desc{
     display: flex;
@@ -320,7 +315,6 @@ nav{
     font-size: 40px;
     font-weight: 700;
     width: 400px;
-    margin-top: 50px;
 }
 .arrow-l-r{
     width: 30px;
@@ -335,7 +329,7 @@ nav{
     width: 100%;
     margin-top: 50px;
 }
-.feedback-1{
+.feedback-1,.feedback-2{
     background-color: rgb(82, 103, 116);
     border-radius: 4px;
     color: #fff;
@@ -358,11 +352,6 @@ nav{
 .cust-img-div{
     width: 60px;
     height: 60px;
-}
-.feedback-2{
-    background-color: rgb(82, 103, 116);
-    border-radius: 4px;
-    color: #fff;
 }
 .double-quotes{
     width: 100px;
@@ -393,6 +382,7 @@ nav{
     position: relative;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 0;
 }
 .subscribe-heading{
     font-size: 40px;
@@ -438,30 +428,31 @@ nav{
     align-items: center;
 }
 footer{
-    display: flex;
-    height: 400px;
-    justify-content: center;
+    overflow: hidden;
     background-color: rgb(82, 103, 116);
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
     color: #fff;
+    margin: 5%;
 }
 .company{
-    width: 25%;
-    margin: 100px 0 0 90px;
+    width: 29%;
+}
+.footer-list{
+    margin-left: 30px;
 }
 .footer-contents{
-    padding-left: 70px;
-    margin-top: 100px;
+    margin-left: 3%;
     display: flex;
 }
 footer ul{
     list-style: none;
-    display: block;
-    float: left;
+    padding: 0;
 }
 footer h3{
     font-weight: 550;
-    margin-bottom: 10px;
-    padding-left: 77px;
 }
 footer ul li{
     padding-top: 10px;
@@ -469,12 +460,11 @@ footer ul li{
 footer ul li a{
     text-decoration: none;
     color: #fff;
-    padding-left: 40px;
 }
 .social{
     width: 30px;
     height: 30px;
-    margin-left: 18px;
+    margin-inline: 7px;
     margin-top: 15px;
 }
 
@@ -493,7 +483,7 @@ footer ul li a{
     }
     .luxterior{
         font-size: 26px;
-        margin-left: 55px;
+        /* margin-left: 55px; */
     }
     .container-contents{
         margin-left: 20px;
@@ -520,16 +510,18 @@ footer ul li a{
     .up-down{
         font-size: 11px;
     }
+    .features-desc, .features-items{
+        gap: 14px;
+    }
     .features-heading{
         font-size: 37px;
         margin-right: 250px;
     }
     .feature-subheading{
-        font-size: 28px;
+        font-size: 24px;
     }
-    #image2{
-        width: 100%;
-        height: 100%;
+    .feature-brief{
+        font-size: 14px;
     }
     .experience{
         gap: 20px;
@@ -556,26 +548,25 @@ footer ul li a{
         bottom: -2px;
     }
     .process{
-        gap: 30px;
+        gap: 18px;
     }
     #image3{
         width: 100%;
         height: 95%;
     }
     .process-brief h2{
-        margin: 0 0 10% 0;
+        margin: 0 0 5% 0;
         font-size: 37px;
     }
     .process-timeline{
-        column-gap: 15px;
-        row-gap: 5px;
+        column-gap: 10px;
+        row-gap: 2px;
     }
     .process-timeline h3{
         margin: 0;
     }
     .brief{    
-        line-height: 22px;
-        margin: 0 0 0 0;
+        font-size: 16px;
     }
     .number{
         font-size: 17px;
@@ -586,7 +577,9 @@ footer ul li a{
     .fb{
         font-size: 37px;
         width: 350px;
-
+    }
+    .feedback-grid{
+        gap: 40px;
     }
     .double-quotes{
         margin-top: 20px;
@@ -594,8 +587,11 @@ footer ul li a{
         height: 70px;
     }
     .feedback-heading{
-        font-size: 26px;
+        font-size: 24px;
         margin-right: 20px;
+    }
+    .feedback-brief{
+        font-size: 16px;
     }
     .subscribe-heading{
         font-size: 37px;
@@ -620,34 +616,26 @@ footer ul li a{
         font-size: 27px;
     }
     .company{
-        margin-left: 30px;
+        width: 20%;
     }
     .moto{
         font-size: 15px;
     }
     .footer-contents{
-        padding-left: 5px;
-    }
-    footer h3{
-        padding-left: 56px;
+        margin-left: 1%;
     }
     footer ul li a{
-        padding-left: 15px;
-        font-size: 15px;
+        padding-left: 0;
+        font-size: 13px;
     }
 }
 
-  @media (max-width: 900px){
+  @media (max-width: 800px){
     .container{
         max-width: 800px;
-        margin: 5% 5% 0 5% ;
     }
     .luxterior{
         font-size: 24px;
-        margin-left: 25px;
-    }
-    .nav-container{
-        max-width: 700px;
     }
     .nav-links ul{
         display: flex;
@@ -698,7 +686,10 @@ footer ul li a{
     }
     .features-desc{
         grid-template-columns: 350px;
-        justify-content: center;
+        gap: 0;
+    }
+    .features-items, .features-desc{
+        gap: 0;
     }
     #quality-icon{
         width: 45px;
@@ -723,51 +714,52 @@ footer ul li a{
         width: 100%;
     }
     #exp-heading{
-        font-size: 28px;
+        font-size: 26px;
         margin: 0 0 5px 0;
     }
     #exp-brief{
-        font-size: 13px;
+        font-size: 12px;
     }
     .exp-number h2{
-        font-size: 3rem;
-    }
-    .exp-number p{
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-    .exp-number h2{
+        font-size: 45px;
         margin: 10px 0 20px 0;
     }
+    .exp-number p{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
     #LM-btn{
-        padding: 8px 17px;
+        padding: 6px 16px;
     }
     #LM-btn::after{
-        left: 118px;
+        left: 95px;
         font-size: 35px;
-        bottom: -3px;
+        bottom: -8px;
         }
+    .learn-more a{
+        font-size: 12px;
+    }
     #image3{
         width: 100%;
         border-radius: 4px;
     }
     .process-brief h2{
-        font-size: 28px;
+        font-size: 26px;
     }
     .process-heading h3{
+        font-size: 16px;
         margin: 5px 0 0 0;
         padding-left: 18px;
     }
     .brief{
         margin: 0;
         font-size: 12px;
-        line-height: 18px;
     }
     .number{
-        font-size: 15px;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
+        font-size: 14px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
     }
     .dash{
         height: 65px;
@@ -791,21 +783,28 @@ footer ul li a{
         font-size: 13px;
         margin: 13px 22px;
     }
+    .cust-name-field{
+        margin-left: 20px;
+    }
     .customer-name{
-        font-size: 17px;
+        font-size: 16px;
     }
     .customer-img{
         height: 40px;
         width: 40px;
         margin-top: 15px;
+        margin-left: 20px;
     }
     .customer-field{
-        font-size: 14px;
+        font-size: 13px;
     }
     .subscribe-heading{
         font-size: 28px;
         margin: 16px 20%;
         font-weight: 650;
+    }
+    .subscribe{
+        margin-bottom: 0;
     }
     .subscribe-brief{
         font-size: 14px;
@@ -820,34 +819,40 @@ footer ul li a{
     .subscriber-box a{
         margin-left: 324px;
     }
-    footer{
-        height: 300px;
-    }
     .luxterior-footer{
-        font-size: 23px;
+        font-size: 20px;
         font-weight: 600;
     }
     .company{
-        margin: 30px 0 0 20px;
+        width: 30%;
     }
     .moto{
-        font-size: 13px;
+        font-size: 12px;
     }
     .footer-contents{
-        margin-top: 30px;
         padding-left: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .footer-list{
+        margin-left: 9px;
     }
     footer h3{
-        padding-left: 18px;
         font-size: 16px;
+        padding: 0;
         margin-bottom: 0;
     }
     footer ul{
-        padding-left: 13px;
+        padding: 0;
+        margin-top: 0;
+    }
+    .footer-contents ul li{
+        padding-top: 5px;
     }
     footer ul li a{
-        padding-left: 5px;
-        font-size: 11px;
+        padding: 0;
+        font-size: 12px;
     }
     .social{
         width: 24px;
@@ -855,7 +860,7 @@ footer ul li a{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .nav-links{
         height: 24%;
         position: absolute;
@@ -908,21 +913,24 @@ footer ul li a{
         padding: 0;
         position: relative;
         align-self: center;
-        /* width: 85%; */
+        width: 85%;
         margin-top: 0;
         left: auto;
         justify-content: center;
     }
+    .intro-text-box{
+        max-width: fit-content;
+    }
     .intro-text-box h1{
         font-size: 20px;
         line-height: 25px;
-        padding: 2% 6% 1% 10%;
-        margin: 5px 0;
+        padding: 0 10%;
+        margin: 9px 0;
         font-weight: 600;
     }
     .intro-text2{
         font-size: 10px;
-        padding: 0 14% 4% 10%;
+        padding: 0 10% 4% 10%;
         margin: 0;
         text-align: justify;
     }
@@ -943,7 +951,7 @@ footer ul li a{
     }
     .square-box{
         left: 5%;
-        bottom: -3%;
+        bottom: -4%;
         width: 35px;
         height: 35px; 
     }
@@ -953,7 +961,7 @@ footer ul li a{
     }
     .up-down{
         position: absolute;
-        left: 92%;
+        left: 91%;
         top: 27%;
         display: flex;
         font-size: 10px;
@@ -977,7 +985,6 @@ footer ul li a{
     }
     .feature-description-container{
         display: flex;
-        justify-content: center;
     }
     .features-desc{
         grid-template-columns: auto;
@@ -1028,7 +1035,7 @@ footer ul li a{
     }
     #exp-brief{
         font-size: 12px;
-        max-width: 380px;
+        max-width: 450px;
         text-align: justify;
     }
     .exp-number{
@@ -1149,11 +1156,14 @@ footer ul li a{
         height: 30px;
         bottom: -10%;
     }
-    footer{
+    .footer-container{
         flex-direction: column;
         height: 100%;
     }
     .footer-contents{
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         flex-direction: column;
     }
     .luxterior-footer{
@@ -1165,15 +1175,19 @@ footer ul li a{
     }
     .footer-contents h3{
         font-size: 16px;
+        padding: 0;
     }
     .footer-contents a{
         font-size: 12px;
+        padding-left: 0;
     }
     .company{
+        margin-left: 0;
         width: 70%;
     }
-    footer ul{
+    .footer-contents ul{
         align-items: center;
+        padding-inline: 0;
     }
     footer ul li{
         padding-top: 0px;
