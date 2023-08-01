@@ -177,9 +177,11 @@ body{
 }
 .exp-image{
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 #exp-brief{
-    font-size: 17px;
+    font-size: 18px;
     line-height: 35px;
     margin-bottom: 0;
 }
@@ -188,7 +190,6 @@ body{
 }
 #image2{
     width: 100%;
-    height: 100%;
     border-radius: 4px;
 }
 #exp-heading{
@@ -241,7 +242,7 @@ body{
 .process{
     display: flex;
     margin-top: 100px;
-    gap: 70px;
+    gap: 90px;
 }
 .process-brief{
     flex: 1;
@@ -255,6 +256,7 @@ body{
 }
 .process-image{
     flex: 1;
+    display: flex;
     justify-content: center;
 }
 #image3{
@@ -296,9 +298,9 @@ body{
     visibility: hidden;
 }
 .brief{
-    /* line-height: 25px; */
     margin: 0;
-    font-size: 17px;
+    font-size: 18px;
+    line-height: 2;
 }
 .process-desc{
     display: flex;
@@ -521,7 +523,7 @@ footer ul li a{
         font-size: 24px;
     }
     .feature-brief{
-        font-size: 14px;
+        font-size: 16px;
     }
     .experience{
         gap: 20px;
@@ -531,6 +533,7 @@ footer ul li a{
         margin-top: 15px;
     }
     #exp-brief{
+        font-size: 16px;
         line-height: 25px;
     }
     .exp-number h2{
@@ -552,11 +555,10 @@ footer ul li a{
     }
     #image3{
         width: 100%;
-        height: 95%;
     }
     .process-brief h2{
         margin: 0 0 5% 0;
-        font-size: 37px;
+        font-size: 36px;
     }
     .process-timeline{
         column-gap: 10px;
@@ -566,6 +568,7 @@ footer ul li a{
         margin: 0;
     }
     .brief{    
+        line-height: 1.75;
         font-size: 16px;
     }
     .number{
@@ -629,7 +632,6 @@ footer ul li a{
         font-size: 13px;
     }
 }
-
   @media (max-width: 800px){
     .container{
         max-width: 800px;
@@ -672,6 +674,7 @@ footer ul li a{
         height: 60px; 
     }
     .up-down{
+        width: 20px;
         left: 1%;
         font-size: 12px;
     }
@@ -685,30 +688,31 @@ footer ul li a{
         width: 90px;
     }
     .features-desc{
-        grid-template-columns: 350px;
+        grid-template-columns: 500px;
         gap: 0;
     }
-    .features-items, .features-desc{
+    .features-items{
         gap: 0;
     }
     #quality-icon{
         width: 45px;
         height: 45px;
-        margin: 25px 17px 0px 0px;
+        margin: 5px 17px 0px 0px;
     }
     #truck-icon{
         width: 50px;
         height: 50px;
-        margin: 25px 15px 0px 0px;
+        margin: 5px 15px 0px 0px;
     }
     #badge-icon{
-        margin: 25px 15px 0px 10px;
+        margin: 5px 15px 0px 10px;
     }
     .feature-subheading{
         font-size: 22px;
+        margin-top: 5px;
     }
     .feature-brief{
-        font-size: 13px;
+        font-size: 14px;
     }
     #image2{
         width: 100%;
@@ -718,7 +722,7 @@ footer ul li a{
         margin: 0 0 5px 0;
     }
     #exp-brief{
-        font-size: 12px;
+        font-size: 14px;
     }
     .exp-number h2{
         font-size: 45px;
@@ -753,7 +757,7 @@ footer ul li a{
     }
     .brief{
         margin: 0;
-        font-size: 12px;
+        font-size: 14px;
     }
     .number{
         font-size: 14px;
@@ -860,7 +864,10 @@ footer ul li a{
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 580px) {
+    .container{
+        margin: 16px;
+    }
     .nav-links{
         height: 24%;
         position: absolute;
@@ -913,7 +920,7 @@ footer ul li a{
         padding: 0;
         position: relative;
         align-self: center;
-        width: 85%;
+        width: 100%;
         margin-top: 0;
         left: auto;
         justify-content: center;
@@ -924,13 +931,13 @@ footer ul li a{
     .intro-text-box h1{
         font-size: 20px;
         line-height: 25px;
-        padding: 0 10%;
+        padding: 0 5%;
         margin: 9px 0;
         font-weight: 600;
     }
     .intro-text2{
         font-size: 10px;
-        padding: 0 10% 4% 10%;
+        padding: 0 5% 4%;
         margin: 0;
         text-align: justify;
     }
@@ -940,17 +947,17 @@ footer ul li a{
         position: relative;
     }
     .image1{
-        width: 85%;
+        width: 94%;
         height: 100%;
         margin: auto;
     }
     .download-box{
         z-index: 2;
-        right: 6%;
+        right: 0%;
         bottom: -5%;
     }
     .square-box{
-        left: 5%;
+        left: 0%;
         bottom: -4%;
         width: 35px;
         height: 35px; 
@@ -960,9 +967,10 @@ footer ul li a{
         height: 40px;
     }
     .up-down{
-        position: absolute;
+        /* position: absolute;
         left: 91%;
-        top: 27%;
+        top: 27%; */
+        width: 0;
         display: flex;
         font-size: 10px;
     }
@@ -988,34 +996,34 @@ footer ul li a{
     }
     .features-desc{
         grid-template-columns: auto;
-        width: 300px;
+        width: 463px;
     }
     .features{
         flex-direction: column;
     }
     #quality-icon{
-        position: absolute;
+        /* position: absolute; */
         width: 40px;
         height: 40px;
-        margin: 15px 17px 0px 0px;
+        margin: 15px 12px 0px 0px;
     }
     #truck-icon{
-        position: absolute;
+        /* position: absolute; */
         width: 45px;
         height: 45px;
-        margin: 10px 5px 0 0;
+        margin: 10px 9px 0 0;
     }
     #badge-icon{
-        position: absolute;
-        margin: 10px 5px 0 0;
+        /* position: absolute; */
+        margin: 10px 18px 0 0;
     }
     .feature-subheading{
-        margin:15px 0 0 57px;
+        margin:15px 0 0 0;
         font-size: 16px;
     }
     .feature-brief{
-        width: 60%;
-        margin-left: 20%;
+        /* width: 60%; */
+        /* margin-left: 20%; */
         font-size: 12px;
     }
     .experience{
@@ -1026,8 +1034,7 @@ footer ul li a{
         width: 100%;
     }
     #image2{
-        width: 100%;
-        height: 100%;
+        width: 90%;
     }
     #exp-heading{
         font-size: 20px;
@@ -1035,19 +1042,20 @@ footer ul li a{
     }
     #exp-brief{
         font-size: 12px;
-        max-width: 450px;
         text-align: justify;
     }
     .exp-number{
         grid-template-columns: auto;
         text-align: center;
+        gap: 0;
     }
     .exp-number h2{
-        margin-bottom: 10px;
+        margin-bottom: 0;
         font-size: 35px;
     }
     .exp-number p{
         font-size: 12px;
+        margin-top: 0;
     }
     .exp-number-text .total-sold{
         padding-top: 10px;
@@ -1069,13 +1077,10 @@ footer ul li a{
     }
     .process{
         flex-direction: column;
-    }
-    .process-image{
-        justify-content: center;
+        margin-top: 0;
     }
     #image3{
-        height: 100%;
-        width: 100%;
+        width: 90%;
     }
     .fb-heading-arrow{
         max-width: 225px;
@@ -1086,9 +1091,6 @@ footer ul li a{
     }
     .process-timeline h3{
         font-size: 16px;
-    }
-    .brief{
-        line-height: 20px;
     }
     .number{
         width: 42px;
@@ -1128,6 +1130,9 @@ footer ul li a{
     .customer-field{
         font-size: 10px;
     }
+    .subscribe{
+        margin-bottom: 0;
+    }
     .subscribe-heading{
         margin: 20px 10px 10px 10px;
         font-size: 20px;
@@ -1139,20 +1144,20 @@ footer ul li a{
         margin-right: 0;
     }
     .subscriber-box input{
-        width:240px;
+        width:220px;
         height: 25px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
     .subscriber-box input[type="text"]{
         font-size: 12px;
     }
     .subscriber-box a{
-        margin: 2px 20px 2px 174px;
+        margin: 2px 20px 2px 217px;
         font-size: 10px;
         width: 29%;
     }
     .subscriber-box{
-        width: 250px;
+        width: 310px;
         height: 30px;
         bottom: -10%;
     }
@@ -1184,6 +1189,9 @@ footer ul li a{
     .company{
         margin-left: 0;
         width: 70%;
+    }
+    .footer-list{
+        margin-left: 0;
     }
     .footer-contents ul{
         align-items: center;
